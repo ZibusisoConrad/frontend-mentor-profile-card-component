@@ -75,11 +75,13 @@ body {
   color: var(--dk-gray);
   border-top: none;
   margin-bottom: .5rem;
+  opacity: 0.5;
 }
 
 .info {
   text-align: center;
   margin-top: -50px;
+  margin-bottom: 1rem;
 }
 
 .info__img {
