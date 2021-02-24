@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --dk-cyan: hsl(185, 75%, 39%);
+  --dk-blue: hsl(229, 23%, 23%);
+  --gry-blue: hsl(227, 10%, 46%);
+  --dk-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  height: 100vh;
+  font-size: 100%;
+  font-family: 'Kumbh Sans';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--dk-blue);
+  background-color: var(--dk-cyan);
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: 130% 160%, -30% -80%;
+}
+
+@media screen and (min-width: 415px) {
+  body {
+    background-position: 130% 160%, -30% -80%;
+  }
+}
+
+.card {
+  width: 330px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.125rem;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card .bg__img {
+  width: 330px;
+  height: 140px;
+  background-image: url(/images/bg-pattern-card.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card hr {
+  width: 100%;
+  color: var(--dk-gray);
+  border-top: none;
+  margin-bottom: .5rem;
+}
+
+.info {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.info__img {
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  border-radius: 100px;
+  margin-bottom: 1.2rem;
+}
+
+.info__name {
+  font-weight: 700;
+  margin-bottom: .7rem;
+}
+
+.info__age {
+  color: var(--gry-blue);
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.info__city {
+  font-size: .8rem;
+  color: var(--gry-blue);
+  margin-bottom: 1rem;
+}
+
+.stats {
+  padding: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  font-weight: 700;
+}
+
+.stats p {
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.stats span {
+  color: var(--gry-blue);
+  letter-spacing: .1rem;
+  font-size: .6rem;
+  font-weight: 400;
+}
+/*# sourceMappingURL=styles.css.map */
