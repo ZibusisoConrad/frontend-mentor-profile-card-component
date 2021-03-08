@@ -34,12 +34,12 @@ body {
   background-color: var(--dk-cyan);
   background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
-  background-position: 130% 160%, -30% -80%;
+  background-position: -50% 600%, 150% -600%;
 }
 
-@media screen and (min-width: 415px) {
+@media screen and (max-width: 420px) {
   body {
-    background-position: 130% 160%, -30% -80%;
+    background-position: 125% 200%, -20% -100%;
   }
 }
 
