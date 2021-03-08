@@ -34,6 +34,7 @@ body {
   background-color: var(--dk-cyan);
   background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
+  background-position: -50% 600%, 150% -600%;
 }
 
 @media screen and (max-width: 1440px) {
