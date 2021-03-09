@@ -26,23 +26,26 @@ body {
   color: var(--dk-blue);
   background-color: var(--dk-cyan);
   background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: -50% 600%, 150% -600%;
+  background-position: left -120vw top -55vh, right -130vw bottom -50vh;
 
-  @media screen and (max-width: 1440px){
-    background-position: -50% 600%, 150% -600%;
+  @media screen and (min-width: 85.375em){
+    background-position: left -50vw top -120vh, right -35vw bottom -150vh;
+
+  }
+
+  @media screen and (min-width: 90em){
+    background-position: left -40vw top -105vh, right -40vw bottom -105vh;
 
   }
 
-  @media screen and (max-width: 420px) {
-    background-position: 125% 200%, -20% -100%;
-
-  }
 }
 
 
 .card {
-  width: 330px;
+  min-width: 330px;
   margin: auto;
   display: flex;
   // flex-wrap: wrap;
